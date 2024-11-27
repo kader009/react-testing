@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import App from './App';
 
 it('this return app text', () => {
-  render(<App />);  // create virtual dom
+  render(<App />); 
 
   const element = screen.getByText('App');
 
