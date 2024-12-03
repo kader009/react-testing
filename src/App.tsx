@@ -1,11 +1,10 @@
-import Button from './components/Button';
+import About from './components/About';
 
 const App = () => {
   return (
     <div>
       <h1>App</h1>
-      <Button />
-      <Button ActionButton="Reject" />
+      <About/>
     </div>
   );
 };
