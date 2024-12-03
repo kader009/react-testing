@@ -6,6 +6,9 @@ describe('this show the H1', () => {
     render(<About />);
 
     const element = screen.getByText('this is about page');
+    const element1 = screen.getByAltText('person');
+
     expect(element)
+    expect(element1)
   });
 });
