@@ -5,7 +5,11 @@ interface User {
   role: string;
 }
 
-const UserTable = ({ users }: { users: User }) => {
+interface Props{
+  users: User[]
+}
+
+const UserTable = ({ users }: Props) => {
   return (
     <div className="p-6">
       <h1 className="text-xl font-bold mb-4">User Table</h1>
@@ -28,7 +32,7 @@ const UserTable = ({ users }: { users: User }) => {
             </tr>
           </thead>
           <tbody>
-            {users.map((user) => (
+            {users.map((user :User) => (
               <tr key={user.id} className="border-b hover:bg-gray-50">
                 <td className="px-6 py-4 text-sm text-gray-900">{user.id}</td>
                 <td className="px-6 py-4 text-sm text-gray-900">{user.name}</td>
