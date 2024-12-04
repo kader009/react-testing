@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 interface User {
   id: number;
@@ -12,7 +12,13 @@ interface Props {
 }
 
 const UserTable = ({ users }: Props) => {
-  const [showMessage, SetshowMessage] = useState();
+  const [showMessage, SetshowMessage] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      SetshowMessage(true);
+    }, 1000);
+  }, []);
   return (
     <div className="p-6">
       <h1 className="text-xl font-bold mb-4">User Table</h1>
