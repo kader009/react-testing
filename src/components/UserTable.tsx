@@ -1,3 +1,10 @@
+interface User {
+  id: number;
+  name: string;
+  email: string;
+  role: string;
+}
+
 const UserTable = () => {
   return (
     <div className="p-6">
