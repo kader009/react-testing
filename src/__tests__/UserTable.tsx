@@ -13,10 +13,10 @@ const users = [
 ];
 
 describe('this should be find the setTimeout', () => {
-  it('should be find the timeout', () => {
+  it('should be find the timeout', async () => {
     render(<UserTable users={users} />);
 
-    const welcomeText = screen.getByTestId('welcome');
-    expect(welcomeText).toBeInTheDocument()
+    const welcomeText = await screen.findByTestId('welcome');
+    expect(welcomeText).toBeInTheDocument();
   });
 });
