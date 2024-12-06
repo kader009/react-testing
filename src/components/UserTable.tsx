@@ -53,7 +53,7 @@ const UserTable = ({ users }: Props) => {
             ))}
           </tbody>
         </table>
-        {showMessage && <div>welcome to Kader Worlds</div>}
+        {showMessage && <div data-testid='welcome'>welcome to Kader Worlds</div>}
       </div>
     </div>
   );

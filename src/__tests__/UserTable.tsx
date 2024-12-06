@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import UserTable from './UserTable';
+import UserTable from '../components/UserTable';
 
 const users = [
   { id: 1, name: 'John Doe', email: 'john.doe@example.com', role: 'Admin' },
