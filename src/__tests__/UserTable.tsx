@@ -16,7 +16,11 @@ describe('this should be find the setTimeout', () => {
   it('should be find the timeout', async () => {
     render(<UserTable users={users} />);
 
-    const welcomeText = await screen.findByTestId('welcome');
+    const welcomeText = await screen.findByTestId(
+      'welcome',
+      {},
+      { timeout: 2000 }
+    );
     expect(welcomeText).toBeInTheDocument();
   });
 });

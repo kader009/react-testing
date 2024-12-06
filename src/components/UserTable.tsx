@@ -17,7 +17,7 @@ const UserTable = ({ users }: Props) => {
   useEffect(() => {
     setTimeout(() => {
       SetshowMessage(true);
-    }, 500);
+    }, 1000);
   }, []);
   return (
     <div className="p-6">
